@@ -6,7 +6,104 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
     <style>
-      
+      img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.button {
+  background-color:  rgba(245, 73, 144);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post-header h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.post-header .time {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.post-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.post-cover img {
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.post-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.reaction button {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Responsive design cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+  .post-container {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .post-header h3 {
+    font-size: 1rem;
+  }
+
+  .post-content p {
+    font-size: 0.9rem;
+  }
+
+  .reaction button {
+    font-size: 0.9rem;
+  }
+}
     </style>
   </head>
   <body>
